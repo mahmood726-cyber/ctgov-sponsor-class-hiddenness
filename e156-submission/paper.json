@@ -1,0 +1,96 @@
+{
+  "title": "CT.gov Sponsor-Class Hiddenness",
+  "slug": "ctgov-sponsor-class-hiddenness",
+  "author": "Mahmood Ahmad",
+  "date": "2026-03-29",
+  "body": "Which sponsor classes account for the biggest and worst ClinicalTrials.gov disclosure failures? We analysed 578,109 registry records captured on March 29, 2026, with particular attention to 290,524 closed interventional studies and 249,507 eligible older studies. We summarized two-year no-results gaps, structural missingness, and composite hiddenness scores by sponsor class using the full flattened study-level feature set, deliberately separating rates, stocks, and missing-field patterns instead of collapsing everything into one composite leaderboard for public interpretation and oversight. OTHER_GOV had the worst eligible two-year no-results rate at 95.7 percent, whereas OTHER held the largest absolute stock at 127,704 missing-results studies. Industry remained too large to dismiss, contributing 44,007 two-year no-results studies, while NIH had the highest average hiddenness score among named sponsor classes. The class pattern therefore changes depending on whether one prioritizes rates, absolute stock, or structural sparsity, which means a single leaderboard is misleading. These estimates capture observable registry omission rather than motive or legal culpability.",
+  "word_count": 156,
+  "sentence_count": 7,
+  "sentences": [
+    {
+      "role": "Question",
+      "text": "Which sponsor classes account for the biggest and worst ClinicalTrials.gov disclosure failures?"
+    },
+    {
+      "role": "Dataset",
+      "text": "We analysed 578,109 registry records captured on March 29, 2026, with particular attention to 290,524 closed interventional studies and 249,507 eligible older studies."
+    },
+    {
+      "role": "Method",
+      "text": "We summarized two-year no-results gaps, structural missingness, and composite hiddenness scores by sponsor class using the full flattened study-level feature set, deliberately separating rates, stocks, and missing-field patterns instead of collapsing everything into one composite leaderboard for public interpretation and oversight."
+    },
+    {
+      "role": "Primary result",
+      "text": "OTHER_GOV had the worst eligible two-year no-results rate at 95.7 percent, whereas OTHER held the largest absolute stock at 127,704 missing-results studies."
+    },
+    {
+      "role": "Secondary result",
+      "text": "Industry remained too large to dismiss, contributing 44,007 two-year no-results studies, while NIH had the highest average hiddenness score among named sponsor classes."
+    },
+    {
+      "role": "Interpretation",
+      "text": "The class pattern therefore changes depending on whether one prioritizes rates, absolute stock, or structural sparsity, which means a single leaderboard is misleading."
+    },
+    {
+      "role": "Boundary",
+      "text": "These estimates capture observable registry omission rather than motive or legal culpability."
+    }
+  ],
+  "notes": {
+    "app": "CT.gov Sponsor-Class Hiddenness dashboard",
+    "data": "Full March 29, 2026 ClinicalTrials.gov snapshot grouped by sponsor class",
+    "code": "https://github.com/mahmood726-cyber/ctgov-sponsor-class-hiddenness",
+    "doi": "",
+    "version": "1.0.0",
+    "date": "2026-03-29",
+    "validation": "FULL REGISTRY RUN"
+  },
+  "type": "methods",
+  "primary_estimand": "Sponsor-class comparison of eligible 2-year no-results rate and absolute missing-results stock",
+  "validation": {
+    "status": "fail",
+    "checks": [
+      {
+        "name": "single paragraph",
+        "ok": true,
+        "detail": "Body must not contain blank-line paragraph breaks."
+      },
+      {
+        "name": "sentence count",
+        "ok": true,
+        "detail": "Found 7 sentences."
+      },
+      {
+        "name": "word count",
+        "ok": true,
+        "detail": "Found 156 words."
+      },
+      {
+        "name": "no headings",
+        "ok": true,
+        "detail": "No markdown headings allowed in body."
+      },
+      {
+        "name": "no links",
+        "ok": true,
+        "detail": "No links or DOI links allowed in body."
+      },
+      {
+        "name": "result sentence has interval",
+        "ok": true,
+        "detail": "Sentence 4 should include a quantitative result such as a percentage, count, or interval."
+      },
+      {
+        "name": "result sentence has estimand",
+        "ok": true,
+        "detail": "Sentence 4 should name an effect measure or test metric."
+      },
+      {
+        "name": "boundary sentence present",
+        "ok": false,
+        "detail": "Sentence 7 should express a limitation, harm, or scope boundary."
+      }
+    ]
+  },
+  "schema": "e156-v0.2"
+}
